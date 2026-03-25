@@ -1,0 +1,10 @@
+price = float(input("Enter item price: "))
+quantity = int(input("Enter quantity: "))
+
+subtotal = price * quantity
+gst = subtotal * 5 / 100
+grand_total = subtotal + gst
+
+print("Subtotal:", subtotal)
+print("GST (5%):", gst)
+print("Grand Total:", grand_total)
