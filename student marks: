@@ -1,0 +1,36 @@
+1.student Marks:
+
+name = input("Enter student name: ")
+age = int(input("Enter student age: "))
+mark1 = int(input("Enter subject 1 mark: "))
+mark2 = int(input("Enter subject 2 mark: "))
+mark3 = int(input("Enter subject 3 mark: "))
+average = (mark1 + mark2 + mark3) / 3
+if average >= 90:
+    grade = "A"
+    is_pass = True
+elif average >= 75:
+    grade = "B"
+    is_pass = True
+elif average >= 60:
+    grade = "C"
+    is_pass = True
+elif average >= 35:
+    grade = "D"
+    is_pass = True
+else:
+    grade = "F"
+    is_pass = False
+
+if age >= 18:
+    age_status = "Eligible (18+)"
+else:
+    age_status = "Not Eligible (Below 18)"
+
+print("\n--- Student Profile ---")
+print("Name:", name, type(name))
+print("Age:", age, "| Status:", age_status, type(age))
+print("Marks:", [mark1, mark2, mark3])
+print("Average:", average)
+print("Grade:", grade, type(grade))
+print("Is Pass:", is_pass, type(is_pass))
