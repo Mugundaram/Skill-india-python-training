@@ -1,0 +1,10 @@
+a = float(input("Enter first number: "))
+b = float(input("Enter second number: "))
+
+print("Add:", int(a + b))
+print("Sub:", int(a - b))
+print("Mul:", int(a * b))
+print("Div:", a / b) 
+print("Floor Div:", int(a // b))
+print("Mod:", int(a % b))
+print("Power:", int(a ** b))
